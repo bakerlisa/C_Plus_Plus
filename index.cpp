@@ -4,54 +4,7 @@
 
 using namespace std;
 
-class Pizza{
-public:
-	Pizza(string meat_i,string toppings_i,string sauce_i,string cheese_i,string size_i,string crust_i,string customer_name_i){
-		meat = meat_i;
-		toppings = toppings_i;
-		sauce = sauce_i;
-		cheese = cheese_i;
-		size = size_i;
-		crust = crust_i;
-		customer_name = customer_name_i;
-	}
-	string get_meat(){
-		return meat;
-	}
-	string get_topings(){
-		return toppings;
-	}
-	string get_sauce(){
-		return sauce;
-	}
-	string get_cheese(){
-		return cheese;
-	}
-	int get_size(){
-		return size;
-	}
-	string get_crust(){
-		return crust;
-	}
 
-	string get_customer_name(){
-		return customer_name;
-	}
-
-	cout << "ORDER FOR " << customer_name << endl;
-
-	cout << "\n Alright I have an order for 1 " << size << " " << crust << " stuffed pizza with" << sauce
- << " sauce. Topped with " << meat << ", " << toppings << ", and " << cheese << " cheese!" << endl;
-
-private:
-	string meat;
-	string toppings;
-	string sauce;
-	string cheese;
-	string size;
-	string crust;
-	string customer_name;
-};
 
 int main(){
 	string var_meat;
@@ -87,14 +40,21 @@ int main(){
 	cin >> var_crust;
 	cout << var_crust << " now we're talking." << endl;
 
-	cout << "And you name on the order" << endl;
+
+	cout << "Thank you " << var_customer_name << " your order should be ready in 10 minutes! \n" << endl;	
+
+
+	cout << "\n Alright I have an order for 1 " << var_size << " " << var_crust << " crusted pizza with" << var_sauce << " sauce. Topped with " << var_meat << ", " << var_toppings << ", and " << var_cheese << " cheese! \n" << endl;
+
+	cout << "What's the name on the order \n" << endl;
+
 	cin >> var_customer_name;
 
-	cout << "Thank you " << var_customer_name << " your order should be ready in 10 minutes!" << endl;	
+	
+
+	cout << "ORDER FOR " << var_customer_name << endl;
 
 
-
-	Pizza "pizza_"+var_customer_name;
 
 
 
