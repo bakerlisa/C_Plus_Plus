@@ -1,2 +1,5 @@
-# makeYourPizza
-I've been learning C++, so to practice the skills I've been learning I create a file that takes pizza orders!
+# some C++ activites I assigned myself to make sure I was understanding the language!
+
+1. Make a Pizza
+2. Cows - where I exploe vectors and classes more
+3. 
