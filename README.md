@@ -1,4 +1,4 @@
-# some C++ activites I assigned myself to make sure I was understanding the language!
+# C++ activites I created to make sure I was understand the language!
 
 1. 🍕 Build your own Pizza - classes, input (cin) and output (cout)
 2. 🐄 Cows - Exploring classes 
