@@ -100,22 +100,24 @@ int main(){
 
     string name;
     int year;
+    int 
 
     cout << "Good morning. What's your name?" << endl;
     getline(cin, name);
-    cout << "Hello " << name  << " what grade are you in (9) freshman, (10) sophmore, (11) Junior, or (12) senior" << endl;
+    cout << "Hello " << name  << " what grade are you in 9 (freshman), 10 (sophmore), 11 (junior), or 12 (senior)" << endl;
     cin >> year;
+
     bool grade = false;
     while(grade == false){
     if(year == 9){
         cout << "Congrats and welcome to your first year!" << endl;
-        grade = true
+        grade = true;
     }else if(year == 10){
         cout << "Sphomore, you're not new but still a guppie!" << endl;
-        grade = true
+        grade = true;
     }else if(year == 11){
         cout << "Junior, my favoirte year." << endl;
-        grade = true
+        grade = true;
     }else if(year == 12){
         cout << "Oh, Your a senior!!! that's exciting!" << endl;
         grade = true;
