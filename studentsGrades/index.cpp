@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include <stdlib.h>
 
 using namespace std;
 
@@ -98,35 +99,68 @@ int main(){
     vector<Student> junior;
     vector<Student> senior;
 
+    int studentID = 1;
+    
+    char moreStudentsYN;
+    bool moreStudents = true;
+
+while(moreStudents == true){
     string name;
     int year;
-    int 
+    bool grade = false;
 
     cout << "Good morning. What's your name?" << endl;
     getline(cin, name);
     cout << "Hello " << name  << " what grade are you in 9 (freshman), 10 (sophmore), 11 (junior), or 12 (senior)" << endl;
     cin >> year;
 
-    bool grade = false;
-    while(grade == false){
-    if(year == 9){
-        cout << "Congrats and welcome to your first year!" << endl;
-        grade = true;
-    }else if(year == 10){
-        cout << "Sphomore, you're not new but still a guppie!" << endl;
-        grade = true;
-    }else if(year == 11){
-        cout << "Junior, my favoirte year." << endl;
-        grade = true;
-    }else if(year == 12){
-        cout << "Oh, Your a senior!!! that's exciting!" << endl;
-        grade = true;
-    }else{
-        cout << "I didn't get that, try again. 9, 10, 11, or 12" << endl;
-        cin >> year;
-        grade = false;
+        while(grade == false){
+            if(year == 9){
+                cout << "Congrats and welcome to your first year!" << endl;
+                freshmen.push_back(Student(name,studentID));
+                cout << "We've create a freshmen vector size: " << freshmen.size() << endl;
+                studentID++;
+                grade = true;
+            }else if(year == 10){
+                cout << "Sphomore, you're not new but still a guppie!" << endl;
+                sophmore.push_back(Student(name,studentID));
+                studentID++;
+                cout << "Hooray we created a sopmore vector: " << sophmore.size() << endl;
+                grade = true;
+            }else if(year == 11){
+                cout << "Junior, my favoirte year." << endl;
+                junior.push_back(Student(name,studentID));
+                studentID++;
+                cout << "Hip-Ha! We created a junior vector: " << junior.size() << endl;
+                grade = true;
+            }else if(year == 12){
+                cout << "Oh, Your a senior!!! that's exciting!" << endl;
+                senior.push_back(Student(name,studentID));
+                studentID++;
+                cout << "Bing-Bang-Sham-Bam!! You are a senior vector: " << senior.size() << endl;
+                grade = true;
+            }else{
+                cout << "I didn't get that, try again. 9, 10, 11, or 12" << endl;
+                cin >> year;
+                grade = false;
+            }
+        }
+        cout << "Do you want to add another student?? y/n" << endl;
+        cin >> moreStudentsYN;
+        if(moreStudentsYN == 'n'){
+            moreStudents = false;
+            break;
+        }else if(moreStudentsYN == 'y'){
+            moreStudents = true;
+            string name;
+            int year;
+        }else{
+            cout << "I'm sorry I don't understand. y or n" << endl;
+        }
     }
-    }
+
+    
+
 
 
     return 0;
