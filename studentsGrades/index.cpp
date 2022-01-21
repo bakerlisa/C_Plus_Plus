@@ -4,7 +4,6 @@
 
 using namespace std;
 
-
 class Student{
     public:
     Student(string name_i, int id_i){
@@ -94,5 +93,39 @@ class Grade{
 };
 
 int main(){
+    vector<Student> freshmen;
+    vector<Student> sophmore;
+    vector<Student> junior;
+    vector<Student> senior;
+
+    string name;
+    int year;
+
+    cout << "Good morning. What's your name?" << endl;
+    getline(cin, name);
+    cout << "Hello " << name  << " what grade are you in (9) freshman, (10) sophmore, (11) Junior, or (12) senior" << endl;
+    cin >> year;
+    bool grade = false;
+    while(grade == false){
+    if(year == 9){
+        cout << "Congrats and welcome to your first year!" << endl;
+        grade = true
+    }else if(year == 10){
+        cout << "Sphomore, you're not new but still a guppie!" << endl;
+        grade = true
+    }else if(year == 11){
+        cout << "Junior, my favoirte year." << endl;
+        grade = true
+    }else if(year == 12){
+        cout << "Oh, Your a senior!!! that's exciting!" << endl;
+        grade = true;
+    }else{
+        cout << "I didn't get that, try again. 9, 10, 11, or 12" << endl;
+        cin >> year;
+        grade = false;
+    }
+    }
+
+
     return 0;
 }
