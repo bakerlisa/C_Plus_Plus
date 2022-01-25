@@ -122,12 +122,12 @@ int main(){
                         cout << "We've create a freshmen vector size: " << freshmen.size() << endl;
                         studentID++;
                     }else if(year == 10){
-                        cout << "Sphomore, you're not new but still a guppie!" << endl;
+                        cout << "Sophomore, you're not new but still a guppie!" << endl;
                         sophmore.push_back(Student(name,studentID));
                         studentID++;
                         cout << "Hooray we created a sopmore vector: " << sophmore.size() << endl;
                     }else if(year == 11){
-                        cout << "Junior, my favoirte year." << endl;
+                        cout << "Junior, my favorite year." << endl;
                         junior.push_back(Student(name,studentID));
                         studentID++;
                         cout << "Hip-Ha! We created a junior vector: " << junior.size() << endl;
