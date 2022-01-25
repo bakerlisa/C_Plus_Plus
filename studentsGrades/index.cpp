@@ -104,6 +104,8 @@ int main(){
     char moreStudentsYN;
     bool moreStudents = true;
 
+    string course = "";
+
     while(moreStudents == true){
             string name = "";
             int year = 0;
@@ -120,6 +122,9 @@ int main(){
                         cout << "Congrats and welcome to your first year!" << endl;
                         freshmen.push_back(Student(name,studentID));
                         cout << "We've create a freshmen vector size: " << freshmen.size() << endl;
+                        // cout << "Pick a subject: (1) Physics, (2) Geology, (3) Engligh, (4) Health";
+                        // getline(cin,course);
+                        // cout << "Aww " << course << endl;
                         studentID++;
                     }else if(year == 10){
                         cout << "Sophomore, you're not new but still a guppie!" << endl;
@@ -132,7 +137,7 @@ int main(){
                         studentID++;
                         cout << "Hip-Ha! We created a junior vector: " << junior.size() << endl;
                     }else if(year == 12){
-                        cout << "Oh, Your a senior!!! that's exciting!" << endl;
+                        cout << "Oh, You're a senior!!! That's exciting!" << endl;
                         senior.push_back(Student(name,studentID));
                         studentID++;
                         cout << "Bing-Bang-Sham-Bam!! You are a senior vector: " << senior.size() << endl;
@@ -155,3 +160,5 @@ int main(){
     }//student add loop
     return 0;
 }
+
+
