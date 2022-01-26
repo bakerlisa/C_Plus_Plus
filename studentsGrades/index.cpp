@@ -163,7 +163,10 @@ int main(){
 
     grade.push_back(Grade(studentID,courseID,courseGrade));
     course.push_back(Course(courseID,className,classCredits));
-    
+
+    cout << "grade vector size " << grade.size() << endl;
+    cout << "course vector size " << course.size() << endl;
+
     return 0;
 }
 
