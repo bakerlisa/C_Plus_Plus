@@ -19,4 +19,4 @@ int main(){
     return 0;
 }
 
-//since c++ you have to state the var type I odn't know if we can change a to "hello"
+//since c++ you have to state the var type I odn't know if we can change a to "hello"cdal
