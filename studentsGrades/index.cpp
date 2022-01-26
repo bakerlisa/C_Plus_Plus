@@ -99,65 +99,71 @@ int main(){
     vector<Student> junior;
     vector<Student> senior;
 
+    vector<Grade> grade;
+    vector<Course> course;
+
     int studentID = 1;
     
+    // student variables
     char moreStudentsYN;
     bool moreStudents = true;
+    string name = "";
+    string yearName = "";
+    int year = 0;
 
-    string course = "";
+    // course answers
+    string className = "";
+    int classCredits;
+    char courseGrade;
+    int courseID = 123;
 
-    while(moreStudents == true){
-            string name = "";
-            int year = 0;
+    cout << courseID << endl;
+    cout << "Your Name is: " << name << endl;
 
-            cout << "Your Name is: " << name << endl;
+    cout << "Good morning. What's your name?" << endl;
+    getline(cin, name);
+    
+    cout << "Hello " << name  << " what grade are you in 9 (freshman), 10 (sophmore), 11 (junior), or 12 (senior)" << endl;
+    cin >> year;
 
-            cout << "Good morning. What's your name?" << endl;
-            getline(cin, name);
-            
-            if(!name.empty()){
-                cout << "Hello " << name  << " what grade are you in 9 (freshman), 10 (sophmore), 11 (junior), or 12 (senior)" << endl;
-                cin >> year;
-                    if(year == 9){
-                        cout << "Congrats and welcome to your first year!" << endl;
-                        freshmen.push_back(Student(name,studentID));
-                        cout << "We've create a freshmen vector size: " << freshmen.size() << endl;
-                        // cout << "Pick a subject: (1) Physics, (2) Geology, (3) Engligh, (4) Health";
-                        // getline(cin,course);
-                        // cout << "Aww " << course << endl;
-                        studentID++;
-                    }else if(year == 10){
-                        cout << "Sophomore, you're not new but still a guppie!" << endl;
-                        sophmore.push_back(Student(name,studentID));
-                        studentID++;
-                        cout << "Hooray we created a sopmore vector: " << sophmore.size() << endl;
-                    }else if(year == 11){
-                        cout << "Junior, my favorite year." << endl;
-                        junior.push_back(Student(name,studentID));
-                        studentID++;
-                        cout << "Hip-Ha! We created a junior vector: " << junior.size() << endl;
-                    }else if(year == 12){
-                        cout << "Oh, You're a senior!!! That's exciting!" << endl;
-                        senior.push_back(Student(name,studentID));
-                        studentID++;
-                        cout << "Bing-Bang-Sham-Bam!! You are a senior vector: " << senior.size() << endl;
-                    }else{
-                        cout << "I didn't get that, try again. 9, 10, 11, or 12" << endl;
-                        cin >> year;
-                    }
-                cout << "Do you want to add another student?? y/n" << endl;
-                cin >> moreStudentsYN;
-                if(moreStudentsYN == 'n'){
-                    moreStudents = false;
-                    break;
-                }else if(moreStudentsYN == 'y'){
-                    moreStudents = true;
-                    continue;
-                }else{
-                    cout << "I'm sorry I don't understand. y or n" << endl;
-                }
-            }
-    }//student add loop
+    if(year == 9){
+        cout << "Congrats and welcome to your first year!" << endl;
+        freshmen.push_back(Student(name,studentID));
+        yearName = "freshman";
+    }else if(year == 10){
+        cout << "Sophomore, you're not new but still a guppie!" << endl;
+        sophmore.push_back(Student(name,studentID));
+        yearName = "sophmore";
+    }else if(year == 11){
+        cout << "Junior, my favorite year." << endl;
+        yearName = "junior";
+        junior.push_back(Student(name,studentID));
+    }else if(year == 12){
+        cout << "Oh, You're a senior!!! That's exciting!" << endl;
+        yearName = "senior";
+        senior.push_back(Student(name,studentID));
+    }else{
+        cout << "I didn't get that, try again. 9, 10, 11, or 12" << endl;
+        cin >> year;
+    }
+
+    cout << "Favorite Class??" << endl;
+    cin >> className;
+
+    cout << "How many credits??" << endl;
+    cin >> classCredits;
+
+    if(!className.empty()){
+        cout << "Nice! I'm not a fan of " << className << " and it's a " << classCredits << " class! Wow!" << endl;
+        cout << "What was your grads? A B C D or F " << endl;
+    }
+
+    cin >> courseGrade;
+    cout << "Ok ok ok, "<< courseGrade << " grade, nice work as a " << yearName << "!" << endl;
+
+    grade.push_back(Grade(studentID,courseID,courseGrade));
+    course.push_back(Course(courseID,className,classCredits));
+    
     return 0;
 }
 

@@ -1,4 +1,4 @@
-get favorite Course
-// Log it
-// get grade log it
-// out put all the info
+if(!className.empty()){
+    //     cout << "Nice! I'm not a fan of " << className << endl;
+    //     cout << "What grade did you get?" << endl;
+    // }
