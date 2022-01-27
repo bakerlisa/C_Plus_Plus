@@ -1,4 +1,4 @@
-# Recreating JS Algorithms into C++ coe
+# Recreating JS Algorithms into C++ code
 
 Coding Dojo has these JS exercises we do every morning. I started to build the same ones in c++ as mush as I could. 
 
