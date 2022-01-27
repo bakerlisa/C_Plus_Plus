@@ -1,3 +1,7 @@
-In my bootcamp class we were learning JS. Since I had a good grasp on JS, I decided to translate the JS algorithms into C++ algorithms and try to get the same results that I say in JS.
+# Recreating JS Algorithms into C++ coe
 
-At the bottom I mark the difference I ran into 
+Coding Dojo has these JS exercises we do every morning. I started to build the same ones in c++ as mush as I could. 
+
+The ones I couldn't get perfect I commented the differences belong. 
+
+Goal: When I become more proficient go back over code and see if you can get the code closer
