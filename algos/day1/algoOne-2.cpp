@@ -1,4 +1,4 @@
-// JS   code I translated from
+// JS CODE:
 
 // for(var i=0; i<10; i++) {
 //     console.log(i);
