@@ -29,6 +29,9 @@
 using namespace std;
 
 int main(){
-    
+    string arr[5] = {"a", "b", "c", "d", "e"};
+    int len = sizeof(arr) / sizeof(arr[0]);
+
+    cout << len << endl;
     return 0;
 }
