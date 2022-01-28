@@ -13,6 +13,7 @@ int main(){
     values.push_back(754);
     values.push_back(74);
 
+    //All the ways you can write for loops
     for(int i = 0; i < values.size(); i++){
         cout << values[i] << endl;
     }
@@ -25,7 +26,8 @@ int main(){
         cout << *it << endl;
     }
 
-
+    int var = 8;
+    void* ptr = &var;
 
 
     return 0;
