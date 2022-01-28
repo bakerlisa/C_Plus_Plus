@@ -1,69 +1,82 @@
-// What is a variable?
-It's a container that you can drop any value and save to use later
+//Teacher gave us a bunch of questions and I translted them into C++
 
-// Make me a variable called name and put your name as the value
-var name = "Lisa";
+#include <iostream>
+#include <string>
+#include <vector>
 
-// Make me a variable called age and put your age as the value
-var age = 31;
+using namespace std;
 
-// Pretend it's your birthday and add 1 to your age
-age++;
-
-// Make me a variable called isStudent and set the value to true
-var isStudent = true;
-
-// What do we call the variable type I just had you make?
-boolean
-
-// What is a conditional statement and why are they handy?
-It checks to values to see if its true. Its handy for filtering through and comparaing information 
-
-// Write me a conditional statement that checks if your age is under 25. If it is, print "Wow, you're pretty young!" if it's not, print "Age = wisdom"
-if(age < 25){
-    console.log("Wow, you're pretty young!");
-}else{
-    console.log("Age = Wisdom");
+void greeting(string mess){
+    cout << "Hello " << mess << "! Happy Friday" << endl;
 }
 
-// Write me a conditional statement that checks if you are a student. If you are, print "Good on you for learning to code!"
-if(isStudent){
-    console.log(Good on you for learning to code!);
-}
+int main(){
+    // Make me a variable called name and put your name as the value
+    string name = "Lisa";
 
-// Write a for loop that starts at 0, ends at 10, and increments up by 1. Inside the loop, print the value of i
-for(i=0;i<10;i++){
-    console.log(i);
-}
+    // Make me a variable called age and put your age as the value
+    int age = 31;
 
-// Now write me a for loop that starts at 20, ends at 1, and decrements by 2. Inside the loop, print the value of i
+    // Pretend it's your birthday and add 1 to your age
+    age++;
 
-// Make me an array with the values [3,7,10,2,4,18]
+    cout << age << endl;
+    // Make me a variable called isStudent and set the value to true
+    bool isStudent = true;
 
-// Pop quiz: what index value do arrays ALWAYS start on?
+    // Write me a conditional statement that checks if your age is under 25. If it is, print "Wow, you're pretty young!" if it's not, print "Age = wisdom"
 
-// Pop quiz: if I wanted to grab the 2nd value in an array, how would I write that?
+    if(age > 25){
+        cout << "Age = Wisdom" << endl;
+    }else{
+        cout << "Wow, you're pretty young!" << endl;
+    }
 
-// Pop quiz: how would I grab the LAST value in an array?
+    // Write me a conditional statement that checks if you are a student. If you are, print "Good on you for learning to code!"
+    if(isStudent){
+        cout << "Good on you for learning to code" << endl;
+    }
 
-// Push the value 5 into the array you made
+    // Write a for loop that starts at 0, ends at 10, and increments up by 1. Inside the loop, print the value of i
+    // for(int n = 0; n <= 10; n++){
+    //     cout << n << endl;
+    // }
 
-// Write me a for loop that traverses through the array from before and prints the values at each index
+    // Now write me a for loop that starts at 20, ends at 1, and decrements by 2. Inside the loop, print the value of i
+    for(int m = 20; m > 1; m -=2){
+        cout << "so statement" << m << endl;
+    }
 
-// Now add to that loop some logic that checks if the value is greater than 5 and ONLY print the value if it is larger than 5
+    // Make me an array with the values [3,7,10,2,4,18]
+    int arr[7] = {3,7,10,2,4,18};
 
-// Function time! Tell me what a function is and why we use them?
+    // Push the value 5 into the array you made
+    arr[6] = 100;
+    cout << "arr[6] : " << arr[6] << endl;
 
-// If I write function doAThing(value)...what is the term we use for that "value" inside the parentheses?
+    vector<int> arrNew;
+    arrNew.push_back(3);
+    arrNew.push_back(7);
+    arrNew.push_back(10);
+    arrNew.push_back(2);
+    arrNew.push_back(4);
+    arrNew.push_back(18);
 
-// Write me a function that, when called, prints out "Hello there!"
+    cout << arrNew.size() << endl;
 
-// Now add the ability for the function to accept a name and print out "Hello there {given name here}!"
+    // Write me a for loop that traverses through the array from before and prints the values at each index
+    for(int value: arrNew){
+        cout << "value: " << value << endl;
+    }
 
-// Quick! Tell me the coolest thing you've learned this week!
+    // Now add to that loop some logic that checks if the value is greater than 5 and ONLY print the value if it is larger than 5
+    for(int value: arrNew){
+        if(value > 5) {
+            cout << "Greater than 5: " << value << endl;
+        }
+    }
 
-// What are you most proud of yourself for figuring out this week?
+    greeting("lisa");
 
-// Are you excited to learn more?
-
-// What can we do to make your time with us even better?
+    return 0;
+};
