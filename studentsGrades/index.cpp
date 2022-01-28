@@ -94,6 +94,8 @@ class Grade{
 };
 
 int main(){
+    vector<int> numbers = {12,25,31,47,58};
+    
     vector<Student> freshmen;
     vector<Student> sophmore;
     vector<Student> junior;
