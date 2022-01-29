@@ -16,6 +16,7 @@ using namespace std;
 
 int main(){
     int start = 0;
+
     int end = 12;
 
     while(start < end){
@@ -25,3 +26,5 @@ int main(){
     }
     return 0;
 }
+
+//pretty straight forward for a loop nothing crazy or unexpeected
