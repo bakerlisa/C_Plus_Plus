@@ -1,0 +1,1 @@
+fruit2 = fruit1;
