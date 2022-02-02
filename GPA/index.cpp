@@ -4,19 +4,17 @@
 
 using namespace std;
 
-class Student{
+class student{
     public:
-        Student(int student_id_i, string name_i){
-            name = name_i;
+        student(int student_id_i,string name_i){
             student_id = student_id_i;
+            name = name_i;
         }
 
         int get_student_id(){
             return student_id;
         }
-        string get_name(){
-            return name;
-        }
+        
     private:
         int student_id;
         string name;
@@ -68,11 +66,11 @@ class Grade{
 };
 
 int main(){
-    Student newStudent;
-    newStudent(1,"Lisa");
+    // Student newStudent(1,"Lisa");
     
-    // vector<Student> students;
-        // students.push_back("Georgee P. Burdell");
+    vector<student> students;
+    //code is not adding to vector?? why
+        students.push_back(1,"Georgee P. Burdell");
     // students.push_back(2,"Nancy Rhodes");
 
     // vector<Course> courses;
@@ -92,7 +90,7 @@ int main(){
     float GPA = 0.0f;
     // int id;
 
-    cout << "students size:  " << students.size() << endl;
+    // cout << "students size:  " << students.size() << endl;
 
 
     return 0; 
