@@ -6,7 +6,7 @@ using namespace std;
 
 class student{
     public:
-        student(int student_id_i,string name_i){
+        student(int student_id_i, string name_i){
             student_id = student_id_i;
             name = name_i;
         }
@@ -14,6 +14,18 @@ class student{
         int get_student_id(){
             return student_id;
         }
+
+        string get_name(){
+            return name;
+        }
+
+        void set_age(int new_student_id){
+            student_id = new_student_id;
+        }
+        void set_name(string new_name){
+            name = new_name;
+        }
+
         
     private:
         int student_id;
@@ -66,11 +78,8 @@ class Grade{
 };
 
 int main(){
-    // Student newStudent(1,"Lisa");
-    
-    vector<student> students;
-    //code is not adding to vector?? why
-        students.push_back(1,"Georgee P. Burdell");
+    vector<student> person;
+    person.push_back(1,"Georgee P. Burdell");
     // students.push_back(2,"Nancy Rhodes");
 
     // vector<Course> courses;
