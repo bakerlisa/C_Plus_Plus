@@ -36,3 +36,42 @@
 // 3. console.log the names of the pokémon whose only type is "poison"
 // 4. console.log the first type of all the pokémon whose second type is "flying"
 // 5. Bonus Challenge: console.log the reverse of the names of the pokémon whose only type is "poison"
+
+#include <iostream>
+#include <string>
+#include <vector>
+
+using namespace std;
+
+class Pokemon{
+    public:
+    Pokemon(int id_i, string name_i, string types_i){
+        id = id_i;
+        name = name_i;        
+        types = types_i;
+    }
+
+    int get_id(){
+        return id;
+    }
+    string get_name(){
+        return name;
+    }
+    string get_type(){
+        return types;
+    }
+
+
+    private:
+        int id;
+        string name;
+        string types;
+
+};
+
+int main(){
+
+    vector<Pokemon> poky;
+    // Pokemon poky(23,"Lisa","flying");
+
+}
